@@ -8,7 +8,6 @@ type_name:
     - ID
 
 identifier_name:
-  excluded:
     - id
     - vc
 
@@ -19,7 +18,6 @@ excluded:
 opt_in_rules:
   - empty_count
   - closure_spacing
-  - contains_over_first_not_nil
   - missing_docs
 #  - implicit_return
   - modifier_order
@@ -29,7 +27,6 @@ opt_in_rules:
 custom_rules:
   spaces_over_tabs:
     included: ".*\\.swift"
-    name: "Spaces over Tabs"
     regex: "\t"
     message: "Prefer spaces for indents over tabs. See Xcode setting: 'Text Editing' -> 'Indentation'"
     severity: warning
